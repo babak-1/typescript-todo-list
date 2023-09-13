@@ -1,0 +1,21 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  width: 90%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.todos::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .todos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
